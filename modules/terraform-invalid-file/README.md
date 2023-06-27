@@ -1,6 +1,6 @@
 # Terraform Module - Testing
 
-This Terraform module is designed for testing purposes and can be used as a starting point for creating new modules. It includes an invalid `main.tf` file.
+This Terraform module is designed for testing purposes and can be used as a starting point for creating new modules. It includes an invalid file "a" and a `main.tf` file.
 
 ## Usage
 

@@ -8,4 +8,5 @@ resource "null_resource" "test" {
 variable "quantity" {
   type = number
   description = "Number of resources to be created"
+  default = 3
 }

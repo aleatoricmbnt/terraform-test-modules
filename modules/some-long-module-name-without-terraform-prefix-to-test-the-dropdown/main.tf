@@ -1,5 +1,5 @@
 resource "terraform_data" "this" {
-  input = var.input
+  input = [ var.input, var.long-named-pet-consisting-of-words-and-characters-with-dashes-and-underscores-to-reach-a-total-length-of-200-characters-in-accordance-with-your-request-to-include-words-dashes-underscores-and-lowercase-letters, var.short_name, var.long-named-pet-consisting-of-words-and-characters-with-dashes-and-underscores-to-reach-a-total-length-of-200-characters-in-accordance-with-your-request-to-include-words-dashes-underscores-and-lowercase-letters-second-attempt ]
   triggers_replace = var.triggers_replace
 }
 
@@ -64,4 +64,16 @@ In truth, Vandire had tricked the sisters, gambling that they would never have s
 
 The sisters became Vandire's personal bodyguard, and their skill at arms was enhanced by training in the finest weapons and armour the High Lord could provide. The Brides of the Emperor would stand at Vandire's side wherever he went, and they were both his bodyguards and his executioners. Word of their dedication spread across the worlds of the Imperium, and none who entered the High Lord's presence would so much as look at him askance under the silent, watchful gaze of the Brides of the Emperor.
 EOT
+}
+
+variable "long-named-pet-consisting-of-words-and-characters-with-dashes-and-underscores-to-reach-a-total-length-of-200-characters-in-accordance-with-your-request-to-include-words-dashes-underscores-and-lowercase-letters" {
+  default = "short string"
+}
+
+variable "short_name" {
+  default = "short value"
+}
+
+variable "long-named-pet-consisting-of-words-and-characters-with-dashes-and-underscores-to-reach-a-total-length-of-200-characters-in-accordance-with-your-request-to-include-words-dashes-underscores-and-lowercase-letters-second-attempt" {
+  default = "The M16 is a family of military rifles originally designed by Eugene Stoner and manufactured by various companies, most notably Colt. First introduced in the 1960s, the M16 has become one of the most widely used rifles in the world, particularly within the United States military."
 }
